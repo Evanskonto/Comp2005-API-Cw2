@@ -17,6 +17,7 @@ public class FilterAPIResults {
     static APIClient client;
     static List<AirportRecord> records;
 
+    //beforeall function to initialize the classes for integration test
     @BeforeAll
     public static void fetchRecords(){
         //Fetch only once for performance

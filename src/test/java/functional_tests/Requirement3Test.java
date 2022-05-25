@@ -9,6 +9,7 @@ import static org.junit.jupiter.api.Assertions.*;
 public class Requirement3Test {
     static AirportClient client;
 
+    //beforeall function to initialize the classes for functional test
     @BeforeAll
     static void initClient(){
         try {

@@ -14,9 +14,11 @@ import java.util.List;
 
 public class APIClient {
 
+    //connection string
     public static final String API_URL = "http://intelligent-social-robots-ws.com/airports.json";
 
     public List<AirportRecord> fetchAirportRecords() throws URISyntaxException, IOException, InterruptedException {
+        //connection setup
         HttpClient client = HttpClient.newBuilder().build();
         HttpRequest request = HttpRequest.newBuilder(new URI(API_URL))
                 .GET()

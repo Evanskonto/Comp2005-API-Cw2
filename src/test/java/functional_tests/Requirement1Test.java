@@ -10,6 +10,7 @@ public class Requirement1Test {
 
     static AirportClient client;
 
+    //beforeall function to initialize the classes for functional test
     @BeforeAll
     static void initClient(){
         try {
